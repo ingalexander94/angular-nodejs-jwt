@@ -1,0 +1,12 @@
+<div class="card-columns">
+  <div class="card p-3" *ngFor="let task of tasks">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>{{task.description}}</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          {{task.name}} <cite title="Source Title">{{task.date | date}}</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+</div>

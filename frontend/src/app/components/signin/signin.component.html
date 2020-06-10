@@ -1,0 +1,12 @@
+<div class="text-center d-none d-sm-none d-md-block w-25 mx-auto">
+    <form (submit)="signIn()" class="form-signin">
+        <img class="mb-4" src="assets/login.svg" alt="" width="200" height="200">
+        <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+        <label for="inputEmail" class="sr-only">Correo</label>
+        <input [(ngModel)]="loginUser.email" name="email" type="email" id="inputEmail" class="form-control" placeholder="Correo" required autofocus>
+        <label for="inputPassword" class="sr-only">Clave</label>
+        <input [(ngModel)]="loginUser.password" name="password" type="password" id="inputPassword" class="form-control" placeholder="Clave" required>
+        <button class="btn btn-lg btn-danger btn-block mt-2" type="submit">Entrar</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+      </form>
+</div>
